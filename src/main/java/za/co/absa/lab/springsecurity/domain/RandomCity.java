@@ -3,7 +3,7 @@ package za.co.absa.lab.springsecurity.domain;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "app_role")
+@Table(name = "random_city")
 public class RandomCity {
 
     @Id

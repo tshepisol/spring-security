@@ -25,7 +25,7 @@ public class ResourceServerConfig  extends ResourceServerConfigurerAdapter {
         resources.resourceId(resourceIds).tokenServices(tokenServices);
     }
 
-    @Override // Create SECURITY FILTER AUthenticates via  OATH2 TOKEN
+    @Override // Create SECURITY FILTER Authenticates via  OATH2 TOKEN
     public void configure(HttpSecurity http) throws Exception {
         http
             .requestMatchers()

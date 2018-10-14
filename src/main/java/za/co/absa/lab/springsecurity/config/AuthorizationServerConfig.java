@@ -57,6 +57,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .secret(passwordEncoder.encode(clientSecret))
                 .authorizedGrantTypes(grantType) //AUTH USING PASSWORD
                 .scopes(scopeRead, scopeWrite) // READ + WRITE TO APIS
+                //.accessTokenValiditySeconds(10)
                 .resourceIds(resourceIds); //RESOURCE_ID MUST BE ON RESOURCE SERVER AS WELL
     }
 
